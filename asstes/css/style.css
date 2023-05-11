@@ -1,0 +1,603 @@
+/* Common Css Start */
+:root {
+  --primary-color: #ffcc00;
+  --secondary-color: #353535;
+  --secondary-text-color: #7a7a7a;
+  --default-black: #000000;
+  --gray-white: #f4f3f3;
+  --default-white: #ffffff;
+  --icon-color: #484848;
+  --button-color: #e802b3;
+  --purpal-light: #8e2de2;
+  --purpal-dark: #4a00e0;
+}
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--default-white);
+}
+h1,
+h2 {
+  font-weight: 600;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+p {
+  font-weight: 400;
+}
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span,
+small {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+/* //Common Css End */
+
+/* nav css section start */
+#mynav {
+  background: linear-gradient(to left, #4a00e0, #8e2de2);
+  padding: 0;
+}
+
+#mynav ul li a {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 200%;
+  color: var(--default-white);
+  text-transform: uppercase;
+  padding: 14px 23px;
+  position: relative;
+  transition: 0.64s;
+}
+#mynav ul li a:hover {
+  background-color: var(--default-black);
+  color: var(--primary-color);
+}
+#mynav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: 0.6s;
+}
+#mynav ul li:hover a::after,
+#mynav ul li a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* nav css section end */
+
+/* bannar css section start */
+#banner{
+  position: relative;
+}
+#banner .banner_slider_item {
+  height: 1000px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+#banner .banner_slider_item .inner_container h4,
+#banner .banner_slider_item .inner_container h1,
+#banner .banner_slider_item .inner_container p,
+#banner .banner_slider_item .inner_container a {
+  color: var(--default-white);
+}
+#banner .banner_slider_item .inner_container h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+}
+#banner .banner_slider_item .inner_container h1 {
+  font-weight: 600;
+  font-size: 57px;
+  line-height: 74px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+}
+#banner .banner_slider_item .inner_container p {
+  font-size: 16px;
+  line-height: 34px;
+  padding-bottom: 26px;
+  padding-left: 13px;
+}
+#banner .banner_slider_item .inner_container .ancor_1 {
+  display: inline-block;
+  border: 2px solid var(--purpal-light);
+  padding: 15px 25px;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  color: white;
+  line-height: 39px;
+  transition: 0.64s;
+  margin-bottom: 15px;
+}
+#banner .banner_slider_item .inner_container .ancor_1::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to left, #4a00e0, #8e2de2);
+  z-index: -1;
+  transition: 0.5s;
+}
+#banner .banner_slider_item .inner_container .ancor_1:hover {
+  color: var(--default-white);
+}
+#banner .banner_slider_item .inner_container .ancor_1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+#banner .banner_slider_item .inner_container ul li p {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+#banner .banner_slider_item .inner_container ul li a {
+  display: inline-block;
+  border: 2px solid var(--purpal-light);
+  padding: 15px 25px;
+  transition: 0.5s;
+  z-index: 1;
+  font-size: 21px;
+  line-height: 21px;
+  background: none;
+  color: var(--default-white);
+  border-radius: 40px;
+  margin-left: 14px;
+}
+
+#banner .banner_slider_item .inner_container a:hover {
+  color: var(--default-white);
+  background: var(--purpal-light);
+}
+
+/* banner css section end */
+
+/* about css section start */
+#about {
+  padding: 50px 0;
+}
+
+#about .about_info h2 {
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: var(--purpal-light);
+  text-transform: uppercase;
+}
+
+#about .about_info p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+#about .about_info a {
+  display: inline-block;
+  border: 2px solid var(--purpal-light);
+  padding: 8px 31px;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  color: var(--default-black);
+  border-radius: 22px;
+  line-height: 39px;
+  overflow: hidden;
+  transition: 0.64s;
+}
+
+#about .about_info a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 9px;
+  background: linear-gradient(to left, #4a00e0, #8e2de2);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#about .about_info a:hover {
+  color: var(--default-white);
+}
+#about .about_info a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* about css section end */
+
+/* service css section start */
+#service {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+#service h2 {
+  font-size: 50px;
+  line-height: 65px;
+  color: var(--purpal-light);
+}
+#service .service_p {
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--secondary-color);
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+#service .service_intro .row {
+  justify-content: space-between;
+}
+#service .service_intro .service_info {
+  background: var(--gray-white);
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding-bottom: 32px;
+  transition: 0.64s;
+  transform: translateY(0);
+  cursor: pointer;
+}
+#service .service_intro .service_info:hover {
+  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 50px;
+  transform: translateY(-30px);
+}
+#service .service_intro .service_info img {
+  padding-top: 50px;
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+#service .service_intro .service_info h5 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 180%;
+  color: var(--default-black);
+  padding: 18px 0;
+  transition: 0.64s;
+}
+
+#service .service_intro .service_info p {
+  font-size: 15px;
+  line-height: 35px;
+  color: var(--default-black);
+  padding: 2px 16px;
+}
+
+/* service css section end */
+
+/* skill css section start */
+#skill {
+  margin-bottom: 80px;
+}
+#skill h2 {
+  color: var(--purpal-light);
+  font-size: 50px;
+  line-height: 50px;
+}
+#skill .progress_bar {
+  margin-top: 50px;
+}
+#skill .progress_bar h3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+#skill .progress_bar .progress_bar_track {
+  width: 100%;
+  height: 10px;
+  background: lightgray;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+#skill .progress_bar .progress_bar_track .progress_bar_perchant {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+}
+#skill .progress_bar .progress_bar_track .progress_bar_perchant p {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/* skill css section end */
+
+/* project css section start */
+#project h3 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 46px;
+  color: var(--purpal-light);
+  padding-bottom: 30px;
+}
+#project .project_intro {
+  height: 345px;
+}
+#project .project_intro .project_img {
+  position: relative;
+  padding: 0 8px;
+}
+
+#project .project_intro .project_img .overlay {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  background: rgba(1, 3, 13, 0.4834);
+  text-align: center;
+  transition: 0.64s;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+#project .project_intro .project_img:hover .overlay {
+  border-radius: 0;
+  transform: scale(1);
+}
+#project .project_intro .project_img .overlay .project_overlay_info h2 {
+  font-size: 40px;
+  color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 8px;
+}
+#project .project_intro .project_img .overlay .project_overlay_info p {
+  font-size: 24px;
+  color: var(--default-white);
+  text-align: center;
+}
+#project .project_intro .project_img .overlay .project_overlay_info a i {
+  width: 50px;
+  font-size: 18px;
+  color: var(--default-white);
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  transition: 0.64s;
+}
+#project .project_intro .project_img .overlay .project_overlay_info a i:hover {
+  background: var(--purpal-light);
+}
+#project .Projects_slider .Projects_slider_dots {
+  position: absolute;
+  bottom: 85px;
+  left: 602px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 12px;
+}
+#project .Projects_slider .Projects_slider_dots li {
+  line-height: 0;
+  display: inline-block;
+  margin-right: 6px;
+}
+#project .Projects_slider .Projects_slider_dots li button {
+  background: none;
+  border: none;
+  font-size: 0;
+  width: 16px;
+  height: 5px;
+  background: #bdbdbd;
+  border-radius: 5px;
+  transition: 0.5s linear;
+}
+#project .Projects_slider .Projects_slider_dots li.slick-active button {
+  width: 26px;
+  background-color: var(--purpal-light);
+}
+
+/*project css section end */
+
+/* contact css section start */
+#contact {
+  margin-top: 14px;
+  box-shadow: 13px 3px 26px var(--default-black);
+}
+#contact h2 {
+  font-size: 32px;
+  color: var(--purpal-light);
+  line-height: 40px;
+  padding: 40px 0;
+}
+#contact .contact_form .input_1 {
+  padding: 20px 15px;
+  width: 500px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 0.5px solid var(--purpal-light);
+  border-radius: 12px;
+}
+
+#contact .contact_form textarea {
+  width: 636px;
+  height: 246px;
+  border: 0.5px solid var(--purpal-light);
+  border-radius: 12px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+#contact .contact_form button {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  padding: 8px 15px;
+  width: 180px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--default-white);
+  transition: 0.67s;
+  font-size: 21px;
+  background: none;
+  border-radius: 20px;
+  border: 2px solid var(--purpal-light);
+  position: relative;
+  z-index: 1;
+  color: var(--default-black);
+  overflow: hidden;
+}
+#contact .contact_form button::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 9px;
+  background: linear-gradient(to left, #4a00e0, #8e2de2);
+  z-index: -1;
+  transition: 0.64s;
+}
+#contact .contact_form button:hover {
+  color: var(--default-white);
+  border-radius: 40px;
+}
+#contact .contact_form button:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+/* contact css sectiom end */
+
+/* footer css section start */
+#footer {
+  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+  padding: 90px 0;
+  box-shadow: 0px -6px 20px var(--purpal-dark),
+  0px 2px 10px var(--default-white);
+  position: relative;
+}
+#footer .footer_logo img {
+  margin-top: 120px;
+  margin-bottom: 22px;
+}
+#footer .footer_logo p {
+  font-size: 16px;
+  color: var(--default-white);
+  line-height: 27px;
+}
+#footer h4 {
+  font-size: 25px;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+}
+#footer ul li p {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: var(--default-white);
+  transition: 0.64s;
+}
+#footer ul li p:hover {
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+#footer_2 {
+  padding: 60px 0;
+}
+
+#footer .wedget_4 p,
+#footer .wedget_5 p {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 18px;
+  color: var(--primary-color);
+}
+
+#footer .wedget_5 a,
+#footer .wedget_4 a {
+  color: var(--default-white);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+#footer .wedget_6 p {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+  padding-top: 6px;
+  color: var(--primary-color);
+}
+
+#footer .wedget_6 ul li a {
+  display: block;
+  padding: 8px 13px;
+  font-size: 21px;
+  line-height: 21px;
+  background: none;
+  border: 2px solid var(--purpal-dark);
+  color: var(--default-white);
+  border-radius: 17px;
+  margin-left: 13px;
+  transition: 0.67s;
+}
+
+#footer .wedget_6 ul li a:hover {
+  color: var(--default-white);
+  background: var(--purpal-dark);
+}
+/* footer css section end */
+
+/* particles js section start */
+#particles-js, #test {
+  position: absolute;
+  inset: 0;
+  z-index: 99999999;
+  pointer-events: none;
+  overflow: hidden;
+}
